@@ -1,5 +1,4 @@
 import React from "react";
-import Link from 'react-router-dom/Link';
 
 import Fetch from "./Fetch";
 import GroupEvent from './GroupEvent';
@@ -14,9 +13,7 @@ const Events = () => (
             done={events => (
                 <div>
                 {events.map((x, i) =>
-                    <Link key={i}  to={`/event/${x.id}`}>
-                        <GroupEvent event={x} />
-                    </Link>
+                    <GroupEvent key={i} event={x} />
                 )}
                 </div>
             )}
