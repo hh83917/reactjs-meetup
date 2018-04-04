@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
-import Card, { CardHeader } from 'material-ui/Card';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Fetch from "./components/Fetch";
 import GroupHeader from './components/GroupHeader';
@@ -24,9 +23,10 @@ class App extends Component {
               error={error => <Error error={error} message='Error fetching group infomation.'/>}
             />
           </div>
-
-          <Route exact path="/" component={Events} />
-          <Route path='/event/:id' component={EventDetails} />
+          <Switch>
+            <Route exact path="/" component={Events} />
+            <Route path="/event/:id" component={EventDetails} />
+          </Switch>
         </div>
       </Router>
     );

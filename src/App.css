@@ -114,14 +114,6 @@
   font-size: 0.8rem;
 }
 
-.event-details-page {
-  /* display: flex;
-  justify-content: center; */
-  /* flex-direction: column; */
-  /* align-content: flex-start; */
-  /* align-items: baseline; */
-}
-
 .member-table {
   padding: 20px;
   display: flex;
@@ -130,4 +122,13 @@
 
 .member-table-paper {
   width: 800px;
+}
+
+.event-details .stats-panel-summary {
+  padding: 0 60px 0 0;
+}
+
+.stats-panel {
+  display: flex;
+  justify-content: center;
 }

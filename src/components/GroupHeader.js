@@ -1,5 +1,5 @@
 import React from 'react';
-import Card, { CardHeader, CardActions, CardContent, CardMedia } from 'material-ui/Card';
+import Card, { CardHeader, CardContent, CardMedia } from 'material-ui/Card';
 import Avatar from 'material-ui/Avatar';
 
 const GroupHeader = ({ group }) =>
